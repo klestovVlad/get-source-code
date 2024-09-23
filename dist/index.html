@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source code finder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Source code finder</h1>
+
+        <div class="folder-selector">
+            <input type="file" id="folder-input" webkitdirectory multiple style="display: none;" />
+            <button id="choose-folder">Specify the path to the folders with JS</button>
+        </div>
+
+        <div class="layout">
+            <!-- Список файлов -->
+            <div class="file-list" id="file-list-block">
+                <h2>Files list</h2>
+                <input type="text" id="file-search" placeholder="Search file..." />
+                <ul id="file-list">
+                   
+                </ul>
+            </div>
+
+            <!-- Поле ввода минифицированного кода -->
+            <div class="code-input" id="code-input-block">
+                <label for="search-code">Enter minified code:</label>
+                <textarea id="search-code" placeholder="Enter your minified code here..."></textarea>
+            </div>
+            <div class="empty-banner" id="code-empty-banner">
+                <h3>Select the folder first</label>
+            </div>
+        </div>
+
+        <div class="search-section" id="search-section-block">
+            <button id="search-button">Search</button>
+        </div>
+
+        <!-- Поле вывода -->
+        <div class="output" id="output">
+
+        </div>
+    </div>
+</body>
+</html>
